@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FAFDE41D-2C56-44CA-BEDE-BA2F26BA8782</string>
+	<key>IDESourceControlProjectName</key>
+	<string>imageShareApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6C881147-C73C-45A2-A3E0-BF48196B6ED5</key>
+		<string>https://github.com/frizhard/imageShareApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>imageShareApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6C881147-C73C-45A2-A3E0-BF48196B6ED5</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/frizhard/imageShareApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6C881147-C73C-45A2-A3E0-BF48196B6ED5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6C881147-C73C-45A2-A3E0-BF48196B6ED5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>frizhard-github-imageShareApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
