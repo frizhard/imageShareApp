@@ -18,6 +18,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+	
+	// TODO: discriminate iPhone / iPad storyboard
+	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"main" bundle:nil];
+	UIViewController *mainController = [storyboard instantiateInitialViewController];
+	
+	self.window.rootViewController = mainController;
+	
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

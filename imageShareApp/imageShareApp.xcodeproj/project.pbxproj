@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A764E9E4181D6CB700C0F1A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A764E9E6181D6CB700C0F1A5 /* Localizable.strings */; };
+		A764E9EB181D713300C0F1A5 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A764E9E8181D711300C0F1A5 /* main.storyboard */; };
+		A764E9EF181D770F00C0F1A5 /* OShareAlbumsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A764E9EE181D770F00C0F1A5 /* OShareAlbumsController.m */; };
 		A77DE91D181D2B9A00286F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77DE91C181D2B9A00286F2D /* Foundation.framework */; };
 		A77DE91F181D2B9A00286F2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77DE91E181D2B9A00286F2D /* CoreGraphics.framework */; };
 		A77DE921181D2B9A00286F2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77DE920181D2B9A00286F2D /* UIKit.framework */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A764E9E5181D6CB700C0F1A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A764E9E7181D6CD800C0F1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/main.storyboard; sourceTree = "<group>"; };
+		A764E9E9181D711300C0F1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = imageShareApp/Resources/Base.lproj/main.storyboard; sourceTree = "<group>"; };
+		A764E9ED181D770F00C0F1A5 /* OShareAlbumsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OShareAlbumsController.h; path = Classes/OShareAlbumsController.h; sourceTree = "<group>"; };
+		A764E9EE181D770F00C0F1A5 /* OShareAlbumsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OShareAlbumsController.m; path = Classes/OShareAlbumsController.m; sourceTree = "<group>"; };
 		A77DE919181D2B9A00286F2D /* imageShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77DE91C181D2B9A00286F2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A77DE91E181D2B9A00286F2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,9 +89,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A764E9DC181D65DA00C0F1A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A764E9E3181D6CA900C0F1A5 /* main.storyboard */,
+				A764E9E6181D6CB700C0F1A5 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A764E9EC181D76E100C0F1A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A764E9ED181D770F00C0F1A5 /* OShareAlbumsController.h */,
+				A764E9EE181D770F00C0F1A5 /* OShareAlbumsController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		A77DE910181D2B9A00286F2D = {
 			isa = PBXGroup;
 			children = (
+				A764E9E8181D711300C0F1A5 /* main.storyboard */,
 				A77DE924181D2B9A00286F2D /* imageShareApp */,
 				A77DE941181D2B9A00286F2D /* imageShareAppTests */,
 				A77DE91B181D2B9A00286F2D /* Frameworks */,
@@ -115,6 +142,7 @@
 		A77DE924181D2B9A00286F2D /* imageShareApp */ = {
 			isa = PBXGroup;
 			children = (
+				A764E9EC181D76E100C0F1A5 /* Classes */,
 				A77DE92D181D2B9A00286F2D /* AppDelegate.h */,
 				A77DE92E181D2B9A00286F2D /* AppDelegate.m */,
 				A77DE933181D2B9A00286F2D /* Images.xcassets */,
@@ -127,6 +155,7 @@
 		A77DE925181D2B9A00286F2D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A764E9DC181D65DA00C0F1A5 /* Resources */,
 				A77DE926181D2B9A00286F2D /* imageShareApp-Info.plist */,
 				A77DE927181D2B9A00286F2D /* InfoPlist.strings */,
 				A77DE92A181D2B9A00286F2D /* main.m */,
@@ -211,6 +240,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A77DE910181D2B9A00286F2D;
 			productRefGroup = A77DE91A181D2B9A00286F2D /* Products */;
@@ -228,7 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A764E9EB181D713300C0F1A5 /* main.storyboard in Resources */,
 				A77DE929181D2B9A00286F2D /* InfoPlist.strings in Resources */,
+				A764E9E4181D6CB700C0F1A5 /* Localizable.strings in Resources */,
 				A77DE934181D2B9A00286F2D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A77DE92F181D2B9A00286F2D /* AppDelegate.m in Sources */,
+				A764E9EF181D770F00C0F1A5 /* OShareAlbumsController.m in Sources */,
 				A77DE92B181D2B9A00286F2D /* main.m in Sources */,
 				A77DE932181D2B9A00286F2D /* imageShareApp.xcdatamodeld in Sources */,
 			);
@@ -273,6 +306,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A764E9E3181D6CA900C0F1A5 /* main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A764E9E7181D6CD800C0F1A5 /* Base */,
+			);
+			name = main.storyboard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A764E9E6181D6CB700C0F1A5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A764E9E5181D6CB700C0F1A5 /* en */,
+			);
+			name = Localizable.strings;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A764E9E8181D711300C0F1A5 /* main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A764E9E9181D711300C0F1A5 /* Base */,
+			);
+			name = main.storyboard;
+			sourceTree = "<group>";
+		};
 		A77DE927181D2B9A00286F2D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -453,6 +512,7 @@
 				A77DE94D181D2B9A00286F2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A77DE94E181D2B9A00286F2D /* Build configuration list for PBXNativeTarget "imageShareAppTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +521,7 @@
 				A77DE950181D2B9A00286F2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
