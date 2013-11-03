@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7463D231826B92E008213EE /* OAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7463D221826B92E008213EE /* OAlbumManager.m */; };
+		A7463D251826BD80008213EE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7463D241826BD80008213EE /* AssetsLibrary.framework */; };
 		A764E9E4181D6CB700C0F1A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A764E9E6181D6CB700C0F1A5 /* Localizable.strings */; };
 		A764E9EB181D713300C0F1A5 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A764E9E8181D711300C0F1A5 /* main.storyboard */; };
 		A764E9EF181D770F00C0F1A5 /* OShareAlbumsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A764E9EE181D770F00C0F1A5 /* OShareAlbumsController.m */; };
@@ -38,8 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A764E9E5181D6CB700C0F1A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A764E9E7181D6CD800C0F1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/main.storyboard; sourceTree = "<group>"; };
+		A7463D211826B92E008213EE /* OAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAlbumManager.h; path = Managers/OAlbumManager.h; sourceTree = "<group>"; };
+		A7463D221826B92E008213EE /* OAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAlbumManager.m; path = Managers/OAlbumManager.m; sourceTree = "<group>"; };
+		A7463D241826BD80008213EE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A764E9E5181D6CB700C0F1A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A764E9E7181D6CD800C0F1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/main.storyboard; sourceTree = "<group>"; };
 		A764E9E9181D711300C0F1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = imageShareApp/Resources/Base.lproj/main.storyboard; sourceTree = "<group>"; };
 		A764E9ED181D770F00C0F1A5 /* OShareAlbumsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OShareAlbumsController.h; path = Classes/OShareAlbumsController.h; sourceTree = "<group>"; };
 		A764E9EE181D770F00C0F1A5 /* OShareAlbumsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OShareAlbumsController.m; path = Classes/OShareAlbumsController.m; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7463D251826BD80008213EE /* AssetsLibrary.framework in Frameworks */,
 				A77DE91F181D2B9A00286F2D /* CoreGraphics.framework in Frameworks */,
 				A77DE923181D2B9A00286F2D /* CoreData.framework in Frameworks */,
 				A77DE921181D2B9A00286F2D /* UIKit.framework in Frameworks */,
@@ -89,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7463D201826B8E5008213EE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A7463D211826B92E008213EE /* OAlbumManager.h */,
+				A7463D221826B92E008213EE /* OAlbumManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		A764E9DC181D65DA00C0F1A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +145,7 @@
 		A77DE91B181D2B9A00286F2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7463D241826BD80008213EE /* AssetsLibrary.framework */,
 				A77DE91C181D2B9A00286F2D /* Foundation.framework */,
 				A77DE91E181D2B9A00286F2D /* CoreGraphics.framework */,
 				A77DE920181D2B9A00286F2D /* UIKit.framework */,
@@ -142,6 +158,7 @@
 		A77DE924181D2B9A00286F2D /* imageShareApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7463D201826B8E5008213EE /* Managers */,
 				A764E9EC181D76E100C0F1A5 /* Classes */,
 				A77DE92D181D2B9A00286F2D /* AppDelegate.h */,
 				A77DE92E181D2B9A00286F2D /* AppDelegate.m */,
@@ -280,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7463D231826B92E008213EE /* OAlbumManager.m in Sources */,
 				A77DE92F181D2B9A00286F2D /* AppDelegate.m in Sources */,
 				A764E9EF181D770F00C0F1A5 /* OShareAlbumsController.m in Sources */,
 				A77DE92B181D2B9A00286F2D /* main.m in Sources */,

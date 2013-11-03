@@ -8,6 +8,8 @@
 
 #import "OShareAlbumsController.h"
 
+#import "OAlbumManager.h"
+
 @interface OShareAlbumsController ()
 
 @end
@@ -52,6 +54,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	
+	[OAlbumManager scanAlbumsWithBlock:nil];
 }
 
 - (void)didReceiveMemoryWarning
